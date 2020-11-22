@@ -16,7 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".SplashScreen">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppViewPager">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,12 +26,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".MuseumActivity" />
-        <activity android:name=".details.MuseumDetail" />
+        <activity
+            android:name=".details.MuseumDetail"
+            android:theme="@style/AppViewPager" />
         <activity android:name=".RegionsActivity" />
-        <activity android:name=".details.RegionsDetail" />
+        <activity
+            android:name=".details.RegionsDetail"
+            android:theme="@style/AppViewPager" />
         <activity android:name=".CovidActivity" />
-        <activity android:name=".details.CovidDetail" />
-        <activity android:name=".details.BatikDetail" />
+        <activity
+            android:name=".details.CovidDetail"
+            android:theme="@style/AppViewPager" />
+        <activity
+            android:name=".details.BatikDetail"
+            android:theme="@style/AppViewPager" />
         <activity android:name=".MainActivity">
 
         </activity>

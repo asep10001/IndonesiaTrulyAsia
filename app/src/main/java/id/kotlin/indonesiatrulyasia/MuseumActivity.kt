@@ -38,6 +38,7 @@ class MuseumActivity : AppCompatActivity() {
 
             searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextSubmit(query: String): Boolean {
+                    filterList(query)
 
                     return true
                 }

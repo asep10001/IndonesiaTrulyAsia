@@ -19,9 +19,11 @@ class CovidDetail : AppCompatActivity() {
         val jumlah_sembuh = intent.getStringExtra("jumlah_sembuh")
 
         textNamaProvinsiCovid.text = nama_provinsi
-        textJumlahKasusCovid.text = "Jumlah Kasus : " + jumlah_kasus
+        textJumlahKasusCovid.text = jumlah_kasus
         textJumlahDirawat.text = "Jumlah Dirawat : " +jumlah_dirawat
         textJumlahMeninggalCovid.text = "Jumlah Meninggal : " + jumlah_meninggal
         textJumlahSembuhCovid.text = "Jumlah Sembuh : " + jumlah_sembuh
+        textJumlahKasus.text = "Jumlah Kasus : " + jumlah_kasus
+
     }
 }
