@@ -5,6 +5,6 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface MuseumServices {
-    @GET("api?action=findAll")
+    @GET("api/index.php/CcariMuseum/searchGET?nama=museum")
     fun getDataMuseum(): Call<MuseumResponseServer>
 }

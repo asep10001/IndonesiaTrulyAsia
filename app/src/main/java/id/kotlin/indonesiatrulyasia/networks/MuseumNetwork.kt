@@ -10,7 +10,7 @@ class MuseumNetwork {
         fun getRetrofit(): MuseumServices {
 
             val retrofit = Retrofit.Builder()
-                .baseUrl("http://jendela.data.kemdikbud.go.id/api/index.php/CcariMuseum/searchGET?nama=museum")
+                .baseUrl("http://jendela.data.kemdikbud.go.id/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
 

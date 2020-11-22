@@ -25,6 +25,7 @@ class CovidActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_covid)
+        title ="Covid 19 Update in Indonesia"
 
         if (isConnect()) {
 

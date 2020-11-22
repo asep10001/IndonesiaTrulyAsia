@@ -7,11 +7,24 @@
     android:layout_height="150dp"
     android:layout_margin="10dp"
     android:layout_weight="1"
-    android:backgroundTint="@color/colorAccent"
+    android:background="@drawable/covidmain"
     card_view:cardCornerRadius="20dp"
     card_view:cardElevation="20dp">
 
+    <ImageView
+        android:id="@+id/imageBatik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/covidmain" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="bottom|right"
+        android:background="#CDB53FA5">
     <TextView
         android:id="@+id/textCovidJumlahKejadian"
         android:layout_width="wrap_content"
@@ -21,6 +34,14 @@
         android:text="jumlah Cases"
         android:textColor="@android:color/primary_text_dark"
         android:textSize="19sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="bottom|left"
+        android:background="#CDB53FA5">
 
     <TextView
         android:id="@+id/textCovidNamaProvinsi"
@@ -31,6 +52,6 @@
         android:text="nama provinsi"
         android:textColor="@android:color/primary_text_dark_nodisable"
         android:textSize="19sp" />
-
+    </LinearLayout>
 
 </androidx.cardview.widget.CardView>

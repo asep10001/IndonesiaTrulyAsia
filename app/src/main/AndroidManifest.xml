@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:targetSandboxVersion="1"
     package="id.kotlin.indonesiatrulyasia">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,7 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".RegionsActivity"></activity>
+        <activity android:name=".MuseumActivity"></activity>
+        <activity android:name=".details.MuseumDetail" />
+        <activity android:name=".RegionsActivity" />
         <activity android:name=".details.RegionsDetail" />
         <activity android:name=".CovidActivity" />
         <activity android:name=".details.CovidDetail" />

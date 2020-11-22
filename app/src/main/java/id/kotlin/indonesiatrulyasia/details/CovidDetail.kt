@@ -20,7 +20,7 @@ class CovidDetail : AppCompatActivity() {
 
         textNamaProvinsiCovid.text = nama_provinsi
         textJumlahKasusCovid.text = "Jumlah Kasus : " + jumlah_kasus
-        textJumlahDirawatCovid.text = "Jumlah Dirawat : " +jumlah_dirawat
+        textJumlahDirawat.text = "Jumlah Dirawat : " +jumlah_dirawat
         textJumlahMeninggalCovid.text = "Jumlah Meninggal : " + jumlah_meninggal
         textJumlahSembuhCovid.text = "Jumlah Sembuh : " + jumlah_sembuh
     }

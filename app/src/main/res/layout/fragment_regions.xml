@@ -10,7 +10,20 @@
     android:backgroundTint="@color/colorAccent"
     card_view:cardCornerRadius="20dp"
     card_view:cardElevation="20dp">
+    <ImageView
+        android:id="@+id/imageBatik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/indonesia_main" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="bottom|left"
+        android:background="#CDB53FA5">
 
     <TextView
         android:id="@+id/textNamaRegions"
@@ -21,7 +34,15 @@
         android:text="Provinsi"
         android:textColor="@android:color/primary_text_dark"
         android:textSize="19sp" />
+    </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="bottom|right"
+        android:background="#CDB53FA5">
     <TextView
         android:id="@+id/textIdRegions"
         android:layout_width="wrap_content"
@@ -31,6 +52,7 @@
         android:text="id Provinsi"
         android:textColor="@android:color/primary_text_dark_nodisable"
         android:textSize="19sp" />
+    </LinearLayout>
 
 
 </androidx.cardview.widget.CardView>

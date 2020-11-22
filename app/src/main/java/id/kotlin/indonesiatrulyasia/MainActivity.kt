@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         mainSliderView.adapter = mainSlideAdapter
         setupIndicators()
-        setCUrrentIndicator(0)
+        setCUrrentIndicator(2)
         mainSliderView.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback(){
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
@@ -65,6 +65,10 @@ class MainActivity : AppCompatActivity() {
 
         card_regions.setOnClickListener {
             val intent = Intent(this, RegionsActivity::class.java)
+            startActivity(intent)
+        }
+        card_museum.setOnClickListener{
+            val intent = Intent(this, MuseumActivity::class.java)
             startActivity(intent)
         }
     }

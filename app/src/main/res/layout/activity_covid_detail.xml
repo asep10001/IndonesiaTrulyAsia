@@ -1,78 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".details.BatikDetail">
+    android:layout_height="match_parent">
 
-    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view"
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        card_view:cardCornerRadius="20sp"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        card_view:cardElevation="20sp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginBottom="20sp">
-            <TextView
-                android:id="@+id/textNamaProvinsiCovid"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textSize="30sp"
-                android:layout_marginVertical="5sp"
-                android:text="Nama Provinsi"
-                android:textColor="@android:color/white"/>
-        <TextView
-            android:id="@+id/textJumlahKasusCovid"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".details.BatikDetail">
+
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10sp"
-            android:paddingLeft="30sp"
-            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            card_view:cardCornerRadius="20sp"
+            card_view:cardElevation="20sp">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20sp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageBatik"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:background="@android:color/white"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/covidmain" />
+
+                <TextView
+                    android:id="@+id/textNamaProvinsiCovid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5sp"
+                    android:text="Nama Provinsi"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textJumlahKasusCovid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_weight="1"
+                    android:paddingLeft="30sp"
+                    android:text="Jumlah kasus : "
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".details.BatikDetail">
+
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_sembuh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            card_view:cardCornerRadius="20sp"
             android:layout_weight="1"
-            android:text="Jumlah kasus : "
-            android:textColor="@android:color/white" />
+            card_view:cardElevation="20sp">
+            <ImageView
+                android:id="@+id/imgSembuh"
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:background="@android:color/white"
+                android:scaleType="fitXY"
+                android:src="@drawable/cured" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:background="#7EE91E63">
             <TextView
                 android:id="@+id/textJumlahSembuhCovid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10sp"
-                android:paddingLeft="30sp"
-                android:textSize="18sp"
                 android:layout_weight="1"
+                android:paddingLeft="30sp"
                 android:paddingRight="10sp"
                 android:text="Jumlah Sembuh : "
-                android:textColor="@android:color/white" />
-            <TextView
-                android:id="@+id/textJumlahMeninggalCovid"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10sp"
-                android:paddingLeft="30sp"
-                android:textSize="18sp"
-                android:layout_weight="1"
-                android:paddingRight="10sp"
-                android:text="Jumlah Meninggal : "
-                android:textColor="@android:color/white" />
-            <TextView
-                android:id="@+id/textJumlahDirawatCovid"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10sp"
-                android:paddingLeft="30sp"
-                android:textSize="18sp"
-                android:layout_weight="1"
-                android:paddingRight="10sp"
-                android:text="Jumlah Dirawat :"
-                android:textColor="@android:color/white" />
-        </LinearLayout>
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-    </androidx.cardview.widget.CardView>
-</LinearLayout>
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_meninggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            card_view:cardCornerRadius="20sp"
+            android:layout_weight="1"
+            card_view:cardElevation="20sp">
+            <ImageView
+                android:id="@+id/imgMeninggal"
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:background="@android:color/white"
+                android:scaleType="fitXY"
+                android:src="@drawable/covid_dead" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:background="#7EE91E63">
+                <TextView
+                    android:id="@+id/textJumlahMeninggalCovid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_weight="1"
+                    android:paddingLeft="30sp"
+                    android:paddingRight="10sp"
+                    android:text="Jumlah Meninggal : "
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".details.BatikDetail">
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_dirawat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            card_view:cardCornerRadius="20sp"
+            android:layout_weight="1"
+            card_view:cardElevation="20sp">
+            <ImageView
+                android:id="@+id/imgDirawat"
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:background="@android:color/white"
+                android:scaleType="fitXY"
+                android:src="@drawable/dirawat_covid" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:background="#7EE91E63">
+                <TextView
+                    android:id="@+id/textJumlahDirawat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_weight="1"
+                    android:paddingLeft="30sp"
+                    android:paddingRight="10sp"
+                    android:text="Jumlah Meninggal : "
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_jumlahKasus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            card_view:cardCornerRadius="20sp"
+            android:layout_weight="1"
+            card_view:cardElevation="20sp">
+            <ImageView
+                android:id="@+id/imgJumlahKasus"
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:background="@android:color/white"
+                android:scaleType="fitXY"
+                android:src="@drawable/jumlahcovid" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:background="#7EE91E63">
+                <TextView
+                    android:id="@+id/textJumlahKasus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_weight="1"
+                    android:paddingLeft="30sp"
+                    android:paddingRight="10sp"
+                    android:text="Jumlah Meninggal : "
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -21,6 +21,7 @@ class BatikActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.batik_layout)
+        title ="Indonesia Truly Batik"
 
         if (isConnect()) {
 

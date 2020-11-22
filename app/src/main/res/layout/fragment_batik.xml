@@ -21,7 +21,12 @@
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_background" />
 
-
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="bottom|right"
+            android:background="#CDB53FA5">
         <TextView
             android:id="@+id/textNamaBatik"
             android:layout_width="wrap_content"
@@ -31,5 +36,6 @@
             android:text="nama lokasi"
             android:textColor="@android:color/white"
             android:textSize="19sp" />
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

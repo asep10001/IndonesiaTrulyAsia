@@ -22,6 +22,7 @@ class RegionsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_regions)
+        title ="Indonesia Truly Regions"
 
         if (isConnect()) {
 

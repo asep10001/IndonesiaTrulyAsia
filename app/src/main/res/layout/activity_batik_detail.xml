@@ -38,7 +38,7 @@
                 android:textSize="18sp"
                 android:layout_weight="1"
                 android:paddingRight="10sp"
-                android:background="@android:color/background_dark"
+                android:background="#A9000000"
                 android:text="Harga Terendah : \n"
                 android:textColor="@android:color/white" />
 
@@ -52,7 +52,7 @@
                 android:textSize="18sp"
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
-                android:background="@android:color/background_dark"
+                android:background="#A9000000"
                 android:text="Harga Tertinggi: \n"
                 android:textColor="@android:color/white" />
         </LinearLayout>
