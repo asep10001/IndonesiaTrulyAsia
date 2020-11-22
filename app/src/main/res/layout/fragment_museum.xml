@@ -37,22 +37,7 @@
             android:textColor="@android:color/white"
             android:textSize="19sp" />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="bottom|right"
-        android:layout_weight="1"
-        android:background="#A10E37CC">
-        <TextView
-            android:id="@+id/textLokasiMuseum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="nama lokasi Museum"
-            android:textColor="@android:color/white"
-            android:textSize="19sp" />
-    </LinearLayout>
+
 
 
 </androidx.cardview.widget.CardView>

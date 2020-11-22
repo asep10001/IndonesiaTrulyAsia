@@ -16,7 +16,6 @@ import kotlinx.android.synthetic.main.fragment_museum.view.*
 class MuseumAdapter  (private var list_data: MutableList<Museum>?) : RecyclerView.Adapter<MuseumAdapter.MuseumHolder>() {
     class MuseumHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textNamaMuseum = itemView.textNamaMuseum
-        val textLokasiMuseum = itemView.textLokasiMuseum
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MuseumAdapter.MuseumHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.fragment_museum,parent,false)
@@ -26,7 +25,6 @@ class MuseumAdapter  (private var list_data: MutableList<Museum>?) : RecyclerVie
 
     override fun onBindViewHolder(holder: MuseumAdapter.MuseumHolder, position: Int) {
         holder.textNamaMuseum.text = list_data?.get(position)?.nama
-        holder.textLokasiMuseum.text = list_data?.get(position)?.kabupaten_kota
 
         holder.itemView.setOnClickListener {
             val intent = Intent(holder.itemView.context, MuseumDetail::class.java)
