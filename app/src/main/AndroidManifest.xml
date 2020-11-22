@@ -15,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".CovidActivity"></activity>
+        <activity android:name=".RegionsActivity"></activity>
+        <activity android:name=".details.RegionsDetail" />
+        <activity android:name=".CovidActivity" />
         <activity android:name=".details.CovidDetail" />
         <activity android:name=".details.BatikDetail" />
         <activity android:name=".MainActivity">

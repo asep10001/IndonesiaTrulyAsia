@@ -39,12 +39,6 @@ class BatikActivity : AppCompatActivity() {
                             val hasil = response.body()?.hasil
 
                             showData(hasil)
-
-                            Toast.makeText(
-                                this@BatikActivity,
-                                hasil?.get(0)?.link_batik,
-                                Toast.LENGTH_SHORT
-                            ).show()
                         }
                     }
 

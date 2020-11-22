@@ -1,6 +1,6 @@
 package id.kotlin.indonesiatrulyasia.models.data
 
 class Regions {
-    var id: Int? = 11;
-    var nama: String? =  "Aceh";
+    var id: Int? = null;
+    var nama: String? =  null;
 }

@@ -25,5 +25,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CovidActivity::class.java )
             startActivity(intent)
         }
+
+        card_regions.setOnClickListener{
+            val intent = Intent(this, RegionsActivity::class.java )
+            startActivity(intent)
+        }
     }
 }
